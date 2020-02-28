@@ -1,0 +1,7 @@
+simulator lang = spectre 
+global 0 
+parameters ibias=100u l=60n vbias=0.5 w=2u 
+ 
+	M28 ( vout net6 VSS VSS ) nmos l=l w=w*1 multi=1 nf=1 sigma=1  
+	M0 ( net4 net4 VDD VDD ) pmos l=l w=w*1 multi=1 nf=1 sigma=1  
+	M33 ( vout net4 VDD VDD ) pmos l=l w=w*1 multi=1 nf=1 sigma=1  
